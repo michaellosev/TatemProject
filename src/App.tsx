@@ -51,7 +51,7 @@ function App() {
                 <div className="flex space-x-2">
                     <div className="flex">
                         <div className="flex space-x-2">
-                            <label htmlFor="team">Add Team Members</label>
+                            <label htmlFor="team">Add Team Member Name</label>
                             <div className="flex flex-col">
                                 <input type="text" id="team" value={name} className="border border-gray-300 rounded-sm px-2 py-0.5" onChange={(e) => onInputChange(e)}/>
                                 { error && <div className="text-red-400 text-sm">{error}</div> }
