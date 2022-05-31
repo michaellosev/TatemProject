@@ -41,16 +41,11 @@ function App() {
     return (
         <div className="bg-gray-100 min-h-[100vh] flex flex-col">
             { orderSubmitted &&
-                <div>
-                    <Modal 
-                        orderTotal={orderTotal} 
-                        setTeamMembers={setTeamMembers}
-                        setOrderSubmitted={setOrderSubmitted}
-                    />
-                    {/* <Confetti 
-                        numberOfPieces={80}
-                    /> */}
-                </div>
+                <Modal 
+                    orderTotal={orderTotal} 
+                    setTeamMembers={setTeamMembers}
+                    setOrderSubmitted={setOrderSubmitted}
+                />
             }
             <div className="flex items-center ml-8 mt-6">
                 <div className="flex space-x-2">
