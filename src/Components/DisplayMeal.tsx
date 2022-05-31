@@ -19,7 +19,7 @@ const mapping: any = {
     extras: extras
 }
 
-function DisplayMeal( { chipotleMeal, setTeamMembers, member}: props ) {
+function DisplayMeal( { chipotleMeal, setTeamMembers, member }: props ) {
 
     return (
         <div className="flex flex-col w-full px-4 space-y-1">

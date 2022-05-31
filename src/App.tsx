@@ -47,9 +47,9 @@ function App() {
                         setTeamMembers={setTeamMembers}
                         setOrderSubmitted={setOrderSubmitted}
                     />
-                    <Confetti 
+                    {/* <Confetti 
                         numberOfPieces={80}
-                    />
+                    /> */}
                 </div>
             }
             <div className="flex items-center ml-8 mt-6">
@@ -81,7 +81,14 @@ function App() {
                     })}
                 </div>
                 <div className="w-1/3">
-                    {teamMembers.length > 0 && <Receipt teamMembers={teamMembers} setOrderSubmitted={setOrderSubmitted} orderTotal={orderTotal} setOrderTotal={setOrderTotal}/> }
+                    { teamMembers.length > 0 && 
+                        <Receipt 
+                            teamMembers={teamMembers} 
+                            setOrderSubmitted={setOrderSubmitted} 
+                            orderTotal={orderTotal} 
+                            setOrderTotal={setOrderTotal}
+                        /> 
+                    }
                 </div>
             </div>
         </div>
